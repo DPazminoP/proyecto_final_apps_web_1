@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <!--Enlace con estilos-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body style="margin: 8px; ">
+    <!--Formulario-->
+    <header id="inicio">
+        <img src="https://i.postimg.cc/NfsMVSkv/welcome.webp" alt="bienvenida" width="800" height="200">
+        <h1 style="color: #e71111;">Les damos la bienvenida a nuestra comuunidad</h1>
+    </header>
+    <hr>
+    <nav>
+        <a style="color: #ee2a2a;" href="../index.html">Home</a>
+        <a style="color: #ee2a2a;" href="contactos.html">Contacto</a>
+        <a style="color: #ee2a2a;" href="#">Inicio de sesión</a>
+    </nav>
+    <div>
+        <h2 style="color: #161515;">Registro de usuario</h2>
+        <form action="#">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required size="15">
+            <br>
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico" required>
+            <br>
+            
+            <label for="password">Contraseña: </label>
+            <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+            <br>
+            
+            <label for="fechanacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="fechanacimiento" required>
+            <br>
+            
+            <label for="">Género: </label>
+            <label for="masculino"><input type="radio" name="genero" id="masculino">Masculino</label>
+            <label for="femenino"><input type="radio" name="genero" id="femenino">Femenino</label>
+            <label for="otro"><input type="radio" name="genero" id="femenino">Otro</label>
+            <br>
+            
+            <label>Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="" disabled selected>Seleccione su ciudad</option>
+                <option value="quito">Quito</option>
+                <option value="latacunga">Latacunga</option>
+                <option value="cuenca">Cuenca</option>
+                <option value="ibarra">Ibarra</option>
+            </select>
+            <br>
+
+            <label>Intereses</label>
+            <label><input type="checkbox" name="intereses" value="deportes">Deportes </label>
+            <label><input type="checkbox" name="intereses" value="lectura">Lectura </label>
+            <label><input type="checkbox" name="intereses" value="musica">Música </label>
+            <label><input type="checkbox" name="intereses" value="tecnologia">Tecnología </label>
+            <br>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" rows="15" cols="80" placeholder="Escriba sus comentarios"></textarea>
+            <br>
+
+            <label>Adjuntar identificación</label>
+            <br>
+            <input type="file">
+            <br>
+            <br>
+            <br>
+
+            
+            <input type="submit" value="Guardar">
+
+        </form>
+    </div>
+
+
+    <!--Footer-->
+<footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+    <div class="w-full mx-auto max-w-screen-xl py-2 px-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-body sm:text-center">© 2026 <a href="#" class="hover:underline text-white">Navidad Quito™</a>. All Rights Reserved.
+        </span>
+    <ul class="flex flex-col items-center text-xs font-medium text-body sm:mt-0 space-y-2">
+        <li>
+            <a href="productos.html" class="hover:underline hover:text-gray-300 me-8 md:me-10 text-white">Productos</a>
+        </li>
+        <li>
+            <a href="carrito.html" class="hover:underline hover:text-gray-300 me-8 md:me-10 text-white">🛒Carrito</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+<!--Footer termina-->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <!-- Tailwind CSS desde CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <!-- Flowbite  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/3.1.2/flowbite.min.css" rel="stylesheet">
+
+    <!-- Flowbite JS para que funcionen los componentes interactivos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/3.1.2/flowbite.min.js"></script>
+    <!--Enlace con estilos-->
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+
+    <!--barra de navegación-->
+    
+    <nav class="bg-neutral-primary  w-full z-50 top-0 start-0 border-0 border-default">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="../index.html" class="flex items-center space-x-0 rtl:space-x-reverse">
+            <img src="https://i.postimg.cc/SK5sXf5r/Logo-principal.jpg" class="h-16" alt="Flowbite Logo" />
+            <span class="self-center text-3xl text-heading font-semibold whitespace-nowrap bg-transparent py-1 p-20">Tu carrito de compras</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+        <ul class="text-xs font-medium flex flex-col py-6 p-10 md:py-4 mt-4 border border-default rounded-base bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <a href="../index.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contáctanos</a>
+            </li>
+            <li>
+            <a href="formulario.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Inicia sesión</a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">🛒Carrito</a>
+            </li>
+            <li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <!--barra de navegación TERMINA-->
+
+    <!--Carrito de compras-->
+    <main class="container contenedor">
+        <section>
+            <h2>Catálogo de productos</h2>
+            <div id="catalogo-estantes" class="grid-productos"></div>
+        </section>
+        <aside class="carrito-flotante">
+            <h2>Mi carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <div class="total">
+                <strong>Total: $ </strong>
+                <span id="total/precio">0</span>
+                <button onclick="vaciarCarrito()">Vaciar carrito</button>
+            </div>
+        
+    </section>
+    </main>
+    <!--Carrito de compras termina-->
+
+    
+    <!--Footer-->
+<footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+    <div class="w-full mx-auto max-w-screen-xl py-2 px-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-body sm:text-center">© 2026 <a href="#" class="hover:underline text-white">Navidad Quito™</a>. All Rights Reserved.
+        </span>
+    <ul class="flex flex-col items-center text-xs font-medium text-body sm:mt-0 space-y-2">
+        <li>
+            <a href="productos.html" class="hover:underline hover:text-gray-300 me-8 md:me-10 text-white">Productos</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline hover:text-gray-300 me-8 md:me-10 text-white">🛒Carrito</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+<!--Footer termina-->
+<button class="btn-productos" onclick="location.href='productos.html#nuestrosProductos'">Ir a Productos</button>
+
+<!--JavaScript-->
+<script src="/js/carrito.js"></script>
+</body>
+</html>

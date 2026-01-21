@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: #698d35;
+}
+
+#navbar{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #37353E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 40px;
+    color: #F3F2EC;
+    box-shadow: 0 4px 10px #F3F2EC;
+    z-index: 1000;
+    gap: 30px;
+}
+
+#navbar .logo {
+    color: #FF714B;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenedor{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 60%;
+}
+
+.carrito-flotante{
+    width: 40%;
+    background-color: rgb(199, 232, 149);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid gold;
+}
+
+li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid peachpuff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(92, 24, 7);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.tarjeta{
+    background-color: azure;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+
+}
+
+footer {
+    background: #5f0404;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn-productos {
+    position: fixed;
+    bottom: 20px;       /* distancia desde el borde inferior */
+    left: 30%;          /* lo mueve hacia la izquierda, prueba con 25%, 30%, etc. */
+    background-color: #FF714B;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 2000;
+}
+
+.btn-productos:hover {
+    background-color: #FFD93D;
+    color: #37353E;
+}
